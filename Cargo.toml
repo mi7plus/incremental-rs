@@ -1,6 +1,6 @@
 [package]
 name = "incremental-rs"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 license = "MIT"
 description = "Out-of-Core and Incremental Model Fitting for Rust"
@@ -8,8 +8,8 @@ readme = "README.md"
 rust-version = "1.75"
 
 # Add repository metadata
-repository = "https://github.com/your-username/incremental-rs"
-homepage = "https://github.com/your-username/incremental-rs"
+repository = "https://github.com/mi7plus/incremental-rs"
+homepage = "https://github.com/mi7plus/incremental-rs"
 documentation = "https://docs.rs/incremental-rs"
 
 [dependencies]
