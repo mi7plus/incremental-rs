@@ -7,6 +7,11 @@ description = "Out-of-Core and Incremental Model Fitting for Rust"
 readme = "README.md"
 rust-version = "1.75"
 
+# Add repository metadata
+repository = "https://github.com/your-username/incremental-rs"
+homepage = "https://github.com/your-username/incremental-rs"
+documentation = "https://docs.rs/incremental-rs"
+
 [dependencies]
 ndarray = "0.15"
 rand = "0.8"
