@@ -1,0 +1,20 @@
+[package]
+name = "incremental-rs"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Out-of-Core and Incremental Model Fitting for Rust"
+readme = "README.md"
+rust-version = "1.75"
+
+[dependencies]
+ndarray = "0.15"
+rand = "0.8"
+thiserror = "1.0"
+
+# Optional features
+polars = { version = "0.38", optional = true, features = ["lazy", "parquet"] }
+
+[features]
+default = []
+polars-streaming = ["dep:polars"]
