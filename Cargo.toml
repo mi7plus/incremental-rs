@@ -12,6 +12,19 @@ repository = "https://github.com/mi7plus/incremental-rs"
 homepage = "https://github.com/mi7plus/incremental-rs"
 documentation = "https://docs.rs/incremental-rs"
 
+keywords = [
+    "incremental-learning",
+    "out-of-core",
+    "machine-learning",
+    "online-learning",
+    "streaming"
+]
+
+categories = [
+    "science::data-analysis",
+    "algorithms"
+]
+
 [dependencies]
 ndarray = "0.15"
 rand = "0.8"
@@ -23,3 +36,13 @@ polars = { version = "0.38", optional = true, features = ["lazy", "parquet"] }
 [features]
 default = []
 polars-streaming = ["dep:polars"]
+
+[[example]]
+name = "streaming_linear_regression"
+required-features = ["polars-streaming"]
+
+[[example]]
+name = "batch_vs_incremental_comparison"
+
+[[example]]
+name = "minibatch_kmeans_vs_batch"
